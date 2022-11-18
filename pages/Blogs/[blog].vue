@@ -18,7 +18,7 @@
                 <div class="right-top">
                     <h2>Latest Blogs</h2>
                     <ul class="service-list">
-                        <ServiceList v-for="item in blogs" :key="item.id" :title="item.title" :path="`${item.slug}`"></ServiceList>
+                        <ServiceList v-for="item in latestblogs" :key="item.id" :title="item.title" :path="`${item.slug}`"></ServiceList>
                     </ul>
                 </div>
                 <ServiceForm></ServiceForm>
@@ -35,8 +35,12 @@
 <script setup>
 const route = useRoute()
 
+
+const latestblogs = await fetch(
+    'https://appleadtechnologies.com/applead/api/latestblogs'
+).then((res) => res.json()).then(data => data.data)
 const blogs = await fetch(
-    'http://127.0.0.1:8000/api/latestblogs'
+    'https://appleadtechnologies.com/applead/api/blogs'
 ).then((res) => res.json()).then(data => data.data)
 
 
