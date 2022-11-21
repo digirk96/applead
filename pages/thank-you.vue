@@ -2,7 +2,7 @@
     <div>
     <Breadcrum  image="./img/about-bg.jpg" />
 
-<h2>Thank You </h2>
+<h2>Thank You for Reaching Us.<br>We will get back to you soon.</h2>
 
     </div>
 
@@ -25,7 +25,8 @@ h2{
     text-align: center;
     display: flex;
     height: 30rem;
-    font-size: 4rem;
+    font-size: 3rem;
+     line-height: 5rem;
     font-weight: 600;
     color:var(--bs-cyan);
     align-items: center;

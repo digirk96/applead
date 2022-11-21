@@ -1,10 +1,10 @@
 <template>
     <div>
-    <Breadcrum  image="./img/about-bg.jpg" />
+    <Breadcrum  image="./img/about-bg.jpg" title="Blogs" />
 
    <section class="blog">
     <div class="blog-wrapper container">
-        <h3>Latest Blogs</h3>
+      
 
         <div class="card-wrapper">
 
@@ -108,9 +108,9 @@ useHead({
  flex-direction: column;
  gap:1rem;
  padding: 1rem 1rem 0rem 1rem;
-   
+ 
 
-
+position: relative;
 }
 
 .card-wrapper .card .card-content h4{
@@ -141,8 +141,8 @@ useHead({
 .card-wrapper .card .card-content .date{
     display: flex;
     padding: 1rem ;
-  
     justify-content: space-between;
+    
 }
 
 .card-wrapper .card .img-wrapper img{

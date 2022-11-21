@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Breadcrum  image="./img/about-bg.jpg" />
+    <Breadcrum  image="./img/about-bg.jpg" title="About Us"/>
 
    <About/>
 

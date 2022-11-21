@@ -33,7 +33,7 @@
 <script setup>
 
 const blogs = await fetch(
-    'http://127.0.0.1:8000/api/latestblogs'
+    'https://appleadtechnologies.com/applead/api/latestblogs'
 ).then((res) => res.json()).then(data => data.data)
 
 useHead({

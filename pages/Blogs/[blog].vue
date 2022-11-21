@@ -35,7 +35,6 @@
 <script setup>
 const route = useRoute()
 
-
 const latestblogs = await fetch(
     'https://appleadtechnologies.com/applead/api/latestblogs'
 ).then((res) => res.json()).then(data => data.data)
@@ -121,5 +120,21 @@ h2 {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
+}
+
+@media (max-width: 968px){
+.servicepage-wrapper {
+    flex-direction: column;
+}
+
+.left{
+    width: 100%;
+}
+.right{
+    align-items: center;
+    justify-content: center; width: 100%;
+}
+
+
 }
 </style>

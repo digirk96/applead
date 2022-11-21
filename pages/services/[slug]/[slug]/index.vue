@@ -143,4 +143,20 @@ h2 {
     justify-content: flex-start;
     gap: 1rem;
 }
+
+@media (max-width: 968px){
+.servicepage-wrapper {
+    flex-direction: column;
+}
+
+.left{
+    width: 100%;
+}
+.right{
+    align-items: center;
+    justify-content: center; width: 100%;
+}
+
+
+}
 </style>
